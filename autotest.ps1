@@ -13,7 +13,8 @@ function RunTests()
     write-host "RUNNING TESTS"
     write-host $dateStamp
     write-host "......"
-    & "C:\Program Files (x86)\phantomjs\phantomjs.exe" lib\mocha-phantomjs.js test-runner.html
+    & "C:\Program Files (x86)\phantomjs\phantomjs.exe" lib\mocha-phantomjs.coffee test-runner.html tap
+	write-host ""
 }
 
 
